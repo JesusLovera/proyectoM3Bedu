@@ -10,20 +10,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 class CalcularPromedioCursoRxTest {
     private static final Curso CURSO = new Curso();
 
     static {
         Estudiante estudiante1 = new Estudiante();
-        estudiante1.setNombre("Estudiante Uno");
+        estudiante1.setNombreCompleto("Estudiante Uno");
 
         Estudiante estudiante2 = new Estudiante();
-        estudiante2.setNombre("Estudiante Dos");
+        estudiante2.setNombreCompleto("Estudiante Dos");
 
         Estudiante estudiante3 = new Estudiante();
-        estudiante3.setNombre("Estudiante Tres");
+        estudiante3.setNombreCompleto("Estudiante Tres");
 
         Materia materia = new Materia();
         materia.setNombre("Materia");

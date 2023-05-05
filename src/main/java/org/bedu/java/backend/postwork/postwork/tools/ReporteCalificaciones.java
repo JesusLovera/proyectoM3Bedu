@@ -19,7 +19,7 @@ public class ReporteCalificaciones { //Esta clase tambien puede formar parte de 
     }
 
     public List<Reporte> alfabetico(Curso curso){
-        return generaLista(curso.getCalificaciones(), (r1, r2 )-> r1.getNombreEstudiante().compareTo(r2.getNombreEstudiante()));
+        return generaLista(curso.getCalificaciones(), Comparator.comparing(Reporte::getNombreEstudiante));
     }
 
     public List<Reporte> calificacion(Curso curso){

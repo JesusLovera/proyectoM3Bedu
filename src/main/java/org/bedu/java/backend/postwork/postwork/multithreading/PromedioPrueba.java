@@ -35,7 +35,7 @@ public class PromedioPrueba {
         for (int i = 0; i < 20; i++) {
             Estudiante estudiante = new Estudiante();
             estudiante.setId((long)i);
-            estudiante.setNombre("Estudiante " + i);
+            estudiante.setNombreCompleto("Estudiante " + i);
             calificaciones.put(estudiante, rnd.nextInt(10));
         }
 

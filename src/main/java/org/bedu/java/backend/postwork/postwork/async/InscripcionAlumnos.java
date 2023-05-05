@@ -46,7 +46,7 @@ public class InscripcionAlumnos { //esta clase es una prueba, entonces lo más c
         SolicitudEstudiante[] solicitudes = new SolicitudEstudiante[20];
         for (int i = 0; i < 20; i++) {
             Estudiante e = new Estudiante();
-            e.setNombre("Estudiante " + i);
+            e.setNombreCompleto("Estudiante " + i);
             e.setId((long)i);
 
             solicitudes[i] = new SolicitudEstudiante(e, cursos[rnd.nextInt(cursos.length)]);

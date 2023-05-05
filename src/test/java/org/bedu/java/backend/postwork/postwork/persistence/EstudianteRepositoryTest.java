@@ -1,6 +1,5 @@
 package org.bedu.java.backend.postwork.postwork.persistence;
 
-import org.bedu.java.backend.postwork.postwork.model.Curso;
 import org.bedu.java.backend.postwork.postwork.model.Estudiante;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
@@ -30,7 +29,7 @@ class EstudianteRepositoryTest {
     @DisplayName("Estudiante guardado")
     void canSave(){
         Estudiante e=new Estudiante();
-        e.setNombre("prueba");
+        e.setNombreCompleto("prueba");
         e=repository.save(e);
         assertNotNull(e.getId());
     }

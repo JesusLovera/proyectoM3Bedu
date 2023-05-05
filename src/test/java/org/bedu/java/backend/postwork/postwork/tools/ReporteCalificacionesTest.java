@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.*;
 
 class ReporteCalificacionesTest {
@@ -26,9 +25,9 @@ class ReporteCalificacionesTest {
     static{
         MATERIA.setNombre("Matemáticas");
 
-        ESTUDIANTE_1.setNombre("ccc");
-        ESTUDIANTE_2.setNombre("bbb");
-        ESTUDIANTE_3.setNombre("aaa");
+        ESTUDIANTE_1.setNombreCompleto("ccc");
+        ESTUDIANTE_2.setNombreCompleto("bbb");
+        ESTUDIANTE_3.setNombreCompleto("aaa");
 
         CURSO.setCiclo("2030");
         CURSO.setMateria(MATERIA);
